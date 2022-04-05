@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <g id="Group_4" data-name="Group 4" transform="translate(-1253 -464)">
+    <path id="Icon_awesome-exclamation" data-name="Icon awesome-exclamation" d="M6.562,14.679a2.718,2.718,0,1,1-2.718-2.718A2.721,2.721,0,0,1,6.562,14.679ZM1.44.856,1.9,10.1a.816.816,0,0,0,.814.775H4.97a.816.816,0,0,0,.814-.775L6.247.856A.816.816,0,0,0,5.433,0H2.254A.816.816,0,0,0,1.44.856Z" transform="translate(1271.875 478)" fill="#c13249"/>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(1253 464)" fill="none" stroke="#c13249" stroke-width="3">
+      <circle cx="23" cy="23" r="23" stroke="none"/>
+      <circle cx="23" cy="23" r="21.5" fill="none"/>
+    </g>
+  </g>
+</svg>

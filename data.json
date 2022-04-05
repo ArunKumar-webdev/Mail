@@ -1,0 +1,195 @@
+{
+    "sidebarItem":["INBOX","SENT","DRAFTS","SPAN","TRASH","MESSAGE","TAGS"],
+    "lablesList":["Dribbble","Roommates","Bills"],
+    "chatsList":["Dale Brewer","Amir Mesguich","Bill Kenney","Charlie Waite"],
+    "mailList":[{
+        "mailRead": true,
+        "fromMail": "Roman Gonzalez",
+        "toMe":"me",
+        "numberOfMail":"(4)",
+        "subject":"UI/UX Change-",
+        "content":"Heey dude, sorry about the current design i will redesign and update it by EOD.",
+        "date": "Mar 6",
+        "lable":""
+    },{
+        "mailRead": true,
+        "fromMail": "Charlie Waite",
+        "toMe":"me",
+        "numberOfMail":"(6)",
+        "subject":"Process",
+        "content":"Hey man, Hope your are well! THis week we shall meet at the Cafe coffee day",
+        "date": "Mar 6",
+        "lable":""
+    },{
+        "mailRead": false,
+        "fromMail": "Ratchana",
+        "toMe":"",
+        "numberOfMail":"",
+        "subject":"Papaoi -",
+        "content":"Hey there, i am waiting for saturday day",
+        "date": "Mar 5",
+        "lable":""
+    },{
+        "mailRead": true,
+        "fromMail": "Bethany Fabrygel",
+        "toMe":"via PayPal",
+        "numberOfMail":"",
+        "subject":"",
+        "content":"Bethany Fabrygel sent you $150.00 USD",
+        "date": "Mar 5",
+        "lable":""
+    },{
+        "mailRead": true,
+        "fromMail": "Gabriel Parisi",
+        "toMe":"me",
+        "numberOfMail":"(13)",
+        "subject":"Rent DUE -",
+        "content":"You due! Thanks for paying the rent on time.And as the time is bit hard now i am planning to reduce the rent  fee for couple of months",
+        "date": "Mar 5",
+        "lable":"Roommates"
+    },{
+        "mailRead": false,
+        "fromMail": "Dribbble",
+        "toMe":"",
+        "numberOfMail":"",
+        "subject":"[Dribbble]",
+        "content":"Work Inquiry from john smith....",
+        "date": "Mar 5",
+        "lable":"Dribbble"
+    },{
+        "mailRead": true,
+        "fromMail": "Dribbble",
+        "toMe":"",
+        "numberOfMail":"(2)",
+        "subject":"[Dribbble]",
+        "content":"Victor Exiron mentioned you on the design sprint call...",
+        "date": "Mar 5",
+        "lable":"Dribbble"
+    },{
+        "mailRead": false,
+        "fromMail": "Bridge 9 Records",
+        "toMe":"",
+        "numberOfMail":"",
+        "subject":"New Merch online! - ",
+        "content":"The Bridge 9 team is hosting a part tonight we request you to join the party",
+        "date": "Mar 4",
+        "lable":""
+    },{
+        "mailRead": false,
+        "fromMail": "Andrew Crowley",
+        "toMe":"me",
+        "numberOfMail":"(8)",
+        "subject":"CLEMSON!!! - ",
+        "content":"hahah that was awesome man we had a great team party last night. lets plan for more such tems moving forward",
+        "date": "Mar 4",
+        "lable":""
+    },{
+        "mailRead": false,
+        "fromMail": "Bridge 9 Records",
+        "toMe":"",
+        "numberOfMail":"",
+        "subject":"New Merch online! - ",
+        "content":"The Bridge 9 team is hosting a part tonight we request you to join the party",
+        "date": "Mar 4",
+        "lable":""
+    },{
+        "mailRead": false,
+        "fromMail": "Andrew Crowley",
+        "toMe":"me",
+        "numberOfMail":"(8)",
+        "subject":"Video help! - ",
+        "content":"Hey dude, Hope you are doing good i am troble in loading the video in the frame which we were working last week.",
+        "date": "Mar 4",
+        "lable":""
+    },{
+        "mailRead": true,
+        "fromMail": "Dribbble",
+        "toMe":"",
+        "numberOfMail":"",
+        "subject":"[Dribbble]",
+        "content":"Comment on your resume interface 'looking good! the interface looks minimalistic and clean right use of colors' ",
+        "date": "Mar 4",
+        "lable":"Dribbble"
+    },{
+        "mailRead": false,
+        "fromMail": "Apple",
+        "toMe":"",
+        "numberOfMail":"",
+        "subject":"Our fav gift of the season! - ",
+        "content":"Hey There! Greetings, We are pleasered to inform that we are introducing IOS15.",
+        "date": "Mar 3",
+        "lable":""
+    },{
+        "mailRead": false,
+        "fromMail": "Ashish H. Shah",
+        "toMe":"me",
+        "numberOfMail":"(2)",
+        "subject":"Bachelors Party! - ",
+        "content":"Hey dude, awesome i heard the you are throwing a party may i know the agenda",
+        "date": "Mar 3",
+        "lable":"Bills"
+    },{
+        "mailRead": false,
+        "fromMail": "Bridge 9 Records",
+        "toMe":"",
+        "numberOfMail":"",
+        "subject":"New Merch online! - ",
+        "content":"The Bridge 9 team is hosting a part tonight we request you to join the party",
+        "date": "Mar 4",
+        "lable":""
+    },{
+        "mailRead": false,
+        "fromMail": "Andrew Crowley",
+        "toMe":"me",
+        "numberOfMail":"(8)",
+        "subject":"CLEMSON!!! - ",
+        "content":"hahah that was awesome man we had a great team party last night. lets plan for more such tems moving forward",
+        "date": "Mar 4",
+        "lable":""
+    },{
+        "mailRead": false,
+        "fromMail": "Bridge 9 Records",
+        "toMe":"",
+        "numberOfMail":"",
+        "subject":"New Merch online! - ",
+        "content":"The Bridge 9 team is hosting a part tonight we request you to join the party",
+        "date": "Mar 4",
+        "lable":""
+    },{
+        "mailRead": false,
+        "fromMail": "Andrew Crowley",
+        "toMe":"me",
+        "numberOfMail":"(8)",
+        "subject":"Video help! - ",
+        "content":"Hey dude, Hope you are doing good i am troble in loading the video in the frame which we were working last week.",
+        "date": "Mar 4",
+        "lable":""
+    },{
+        "mailRead": true,
+        "fromMail": "Dribbble",
+        "toMe":"",
+        "numberOfMail":"",
+        "subject":"[Dribbble]",
+        "content":"Comment on your resume interface 'looking good! the interface looks minimalistic and clean right use of colors' ",
+        "date": "Mar 4",
+        "lable":"Dribbble"
+    },{
+        "mailRead": false,
+        "fromMail": "Apple",
+        "toMe":"",
+        "numberOfMail":"",
+        "subject":"Our fav gift of the season! - ",
+        "content":"Hey There! Greetings, We are pleasered to inform that we are introducing IOS15.",
+        "date": "Mar 3",
+        "lable":""
+    }
+
+
+
+
+
+
+
+]
+
+}

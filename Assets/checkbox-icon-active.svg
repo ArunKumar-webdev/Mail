@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <g id="Group_9" data-name="Group 9" transform="translate(-1429 -393)">
+    <path id="Icon_material-check-box-outline-blank" data-name="Icon material-check-box-outline-blank" d="M28.5,7.5v21H7.5V7.5h21m0-3H7.5a3.009,3.009,0,0,0-3,3v21a3.009,3.009,0,0,0,3,3h21a3.009,3.009,0,0,0,3-3V7.5A3.009,3.009,0,0,0,28.5,4.5Z" transform="translate(1424.5 388.5)" fill="#cfd0d1"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="27" height="27" rx="3" transform="translate(1429 393)" fill="#cfd0d1"/>
+    <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M6.925,19.764.3,13.013a1.053,1.053,0,0,1,0-1.469L1.74,10.075a1.006,1.006,0,0,1,1.442,0l4.464,4.548,9.56-9.741a1.006,1.006,0,0,1,1.442,0L20.089,6.35a1.053,1.053,0,0,1,0,1.469L8.366,19.764A1.006,1.006,0,0,1,6.925,19.764Z" transform="translate(1432 394.066)" fill="#464646"/>
+  </g>
+</svg>

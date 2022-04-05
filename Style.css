@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #000;
+    font-size: .9rem;
+}
+
+
+
+/* ---------------------------Aside menu--------------------- */
+
+#aside{
+    background-color: #1C2124;
+    width: 20%;
+    height: 100vh;
+   display: inline-block;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+
+
+
+
+ h5{
+    display: inline;
+    color: #A17CBE;
+    border: #A17CBE 3px solid;
+    border-radius: 50%;
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
+
+#mails-container{
+    
+    background-color: #FEFFFF;
+    display: inline-block;
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    height: 100vh;
+    z-index: 1;
+}  
+
+
+
+.mail-item{
+   margin-top: 10px;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 222px;
+    display: inline-block;
+    text-align: center;
+  }
+
+
+
+/* ----------------Sidebar--------------- */
+
+.aside-wrapper{
+
+    color: white;
+    width:60%;
+    margin-left: initial;
+    margin-right: auto;    
+    font-size: 14px;
+}
+
+.aside{
+
+    background-repeat: no-repeat;
+    
+}
+
+
+.iconavathar{
+    margin: 0px 10px 0px 0px;
+    width: 24px;
+  }
+
+ .dropdown{
+     width: 12px;
+     margin-left: 10px;
+     margin-top: -5px;
+ } 
+
+ .mail-header-container{
+     margin-top: -71%;
+     padding-left: 34%;
+     
+ }
+
+.mail-header-container>p{
+    font-size: 14px;
+    font-weight: lighter;
+    display: inline;
+    width: 100%;
+    padding-left: 32px;
+}
+
+
+.composeMail{
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 20%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border: 2px solid red;
+    padding: 10px 25px;
+    
+}
+
+
+#menu-items-container{
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+
+li{
+    list-style-type: none;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: #262B32;
+}
+
+li:last-child {
+    margin-bottom: 8%;
+  }
+
+
+  .lables-menu-items>li:first-child{
+    margin-top: 10%;
+}
+
+.chats-menu-items>li:first-child{
+    margin-top: 10%;
+}
+
+.chats-menu-items{
+    margin-top: 8%;
+    display: inline;
+}
+
+
+.add_icon{
+    float: right;
+    width: 10px;
+    height: 10px;
+    margin-left: 34px;
+}
+
+.lableicon{
+    width: 8px;
+    margin-left: -32px;
+    margin-right: 20px;
+}
+
+
+.asidelableicon{
+    width: 8px;
+   float: right;
+   margin-top: -25px;
+}
+
+.chatlableicon{
+    width: 8px;
+    display: inline;
+    float: left;
+    margin-top: 13px;
+
+}
+
+.list-element{
+    font-size: 14px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  
+}
+
+/* .list-element > p{
+    font-size: 14px;
+    padding: 10px 25px;
+    display: inline;
+    letter-spacing: 1px;
+    margin-top: 20px;
+} */
+
+
+.headings{
+    font-size: 12px;
+    padding: 10px 25px;
+    display: inline;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    color: #616161;
+}
+
+
+
+ 
+/*--------------- Main Content ------------------------*/
+hr{
+    opacity: 0.1;
+}
+
+.mail-body{
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 60px;
+}
+
+
+.mail-header{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3% 0px 0px 0px;
+    padding-left: 60px;
+}
+
+.mail-header > p{
+    font-size: 24px;
+    font-weight: lighter;
+    display: inline;
+    width: 100%;
+}
+
+.mail-header > img{
+   width: 2px;
+}
+
+
+.searchbar{
+    position: relative;
+    right: 32px;
+}
+
+input{
+    border: 1px solid lightgray;
+    padding: 10px 50px;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+
+.searchimage{
+    width: 18px;
+    position: relative;
+    top: -27px;
+    right: -220px;
+}
+
+
+.list-icon{
+    padding-left: 60px;
+}
+
+/* List of icons */
+
+.iconimage{
+    margin: 20px 20px 20px 0px;
+    width: 28px;
+}
+
+
+
+/* ------------------Mail table------------------------- */
+
+
+.mail-table{
+    margin-top: 10px;
+    font-size: .9rem;
+    font-weight: 200;
+    /* color: lightgray; */
+}
+
+
+table{
+    width: 100%;
+}
+
+
+tr{
+   
+}
+
+td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-around; 
+    cursor: pointer;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    
+}
+
+td:hover{
+   background-color: #F2F2F2;
+   border-left:5px solid #A17CBE;
+}
+
+.mailicon{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.item-container{
+    display: inline;
+}
+
+.fromto-container{
+    width: 30%;
+}
+
+.subject-container{
+    width: 60%;
+    margin-left: -150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.unreadMsg{
+    font-weight: bold;
+}
+
+.active{
+    background-color: #F2F2F2;
+    border-left:5px solid #A17CBE;
+}
+
+
+
+/* .lables-menu-items>li{
+    display: inline;
+    padding: 10px 25px;
+} */
