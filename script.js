@@ -42,36 +42,36 @@ window.onload = async () => {
 
             sidebarItem.forEach(element => {
                 if(element == "INBOX"){
-                    menuOut += `<li style="background-color: white;color: black;width: 170%;">${element}<span style="color: white" class="dot"><div class="circle">4</div></span></li><br>`;
+                    menuOut += `<li class='sideli activee' style="width: 170%;">${element}<span style="color: white" class="dot dotactive"><div class="circle">5</div></span></li><br>`;
                 $(menuItems).html(menuOut);
                 } else if(element == "DRAFTS"){
-                    menuOut += `<li style="width: 170%;">${element}<span style="border: 2px solid darkslategrey;height: 25px;
+                    menuOut += `<li class='sideli' style="width: 170%;">${element}<span class='dottli' style="border: 2px solid darkslategrey;height: 25px;
                     width: 25px;
                     border-radius: 50%;
-                    margin-left: 211px;
+                    margin-left: 186px;
                     display: inline-block;
                     text-align: center;"><div class="circle">2</div></span></li><br>`;
                 $(menuItems).html(menuOut);
                 } else if(element == "MESSAGE"){
-                    menuOut += `<li style="width: 170%;">${element}<span style="border: 2px solid darkslategrey;height: 25px;
+                    menuOut += `<li class='sideli' style="width: 200%;">${element}<span class='dottli' style="border: 2px solid darkslategrey;height: 25px;
                     width: 25px;
                     border-radius: 50%;
-                    margin-left: 198px;
+                    margin-left: 174px;
                     display: inline-block;
                     text-align: center;"><div class="circle">2</div></span></li><br>`;
                 $(menuItems).html(menuOut);
                 }
                 else if(element == "SPAN"){
-                    menuOut += `<li style="width: 170%;">${element}<span style="border: 2px solid darkslategrey;    height: 25px;
+                    menuOut += `<li class='sideli' style="width: 170%;">${element}<span class='dottli' style="border: 2px solid darkslategrey;    height: 25px;
                     width: 25px;
                     border-radius: 50%;
-                    margin-left: 230px;
+                    margin-left: 207px;
                     display: inline-block;
                     text-align: center;"><div class="circle">3</div></span></li><br>`;
                 $(menuItems).html(menuOut);
                 }
                  else {
-                menuOut += `<li style="width: 200%;">${element}</li><br>`;
+                menuOut += `<li class='sideli' style="width: 200%;">${element}</li><br>`;
                 $(menuItems).html(menuOut);
                 }
             });
@@ -137,6 +137,19 @@ window.onload = async () => {
             $(".mail-item").click(function (){
                 $(this).addClass("active").siblings().removeClass("active");                
               });
+
+              $(".sideli").click(function (){
+                $(this).addClass("activee").siblings().removeClass("activee");                    
+              });
+
+              $(".tablinks").click(function (){
+                $(this).addClass("active").siblings().removeClass("active");                
+              });  
+
+            //   $(".sideli").click(function (){
+            //       debugger
+            //     $(this).addClass("dotactive").siblings().removeClass("dotactive");                
+            //   });  
               
                         
     };

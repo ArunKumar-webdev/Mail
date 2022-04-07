@@ -12,7 +12,7 @@ body
 }
 
 .circle {
-    height: 24px;
+    height: 22px;
     border-radius: 50%;
     display: flex; /* or inline-flex */
     align-items: center; 
@@ -55,7 +55,7 @@ body
     
     background-color: #fafafa;
     display: inline-block;
-    width: 30%;
+    width: 32%;
     position: absolute;
     left: 20%;
     height: 100vh;
@@ -63,7 +63,7 @@ body
 }  
 
 .sectio-two{
-    padding-left: 906px;
+    padding-left: 825px;
 }
 
 
@@ -75,12 +75,17 @@ body
 .dot {
     height: 25px;
     width: 25px;
-    background-color: red;
+    
     border-radius: 50%;
-    margin-left: 222px;
+    margin-left: 200px;
     display: inline-block;
     text-align: center;
   }
+
+.dotactive{
+    background-color: red;
+}  
+
 
 
 
@@ -89,7 +94,7 @@ body
 .aside-wrapper{
 
     color: white;
-    width:60%;
+    width:66%;
     margin-left: initial;
     margin-right: auto;    
     font-size: 14px;
@@ -143,7 +148,7 @@ body
 
 
 #menu-items-container{
-    margin-top: 30%;
+    margin-top: 28%;
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;
@@ -155,8 +160,13 @@ li{
     cursor: pointer;
 }
 
-li:hover{
-    background-color: #262B32;
+.sideli{
+    color: white;
+}
+
+.activee{
+    color: #000;
+    background-color: white;
 }
 
 li:last-child {
@@ -236,11 +246,23 @@ li:last-child {
  
 /*--------------- Main Content ------------------------*/
 hr{
-    opacity: 0.1;
+    opacity: 0.2;
+    background-color: lightgray;
+    color: lightgrey;
 }
 
+.vl {
+    
+    border: none;
+    border-left: 1px solid lightgrey;
+    height: 45px;
+    width: 0px;
+    margin-left: 170px;
+    margin-top: -45px;  
+  }
+
 .mail-body{
-    width: 100%;
+    width: 92%;
     margin-left: 5px;
     margin-right: 60px;
 }
@@ -275,8 +297,9 @@ input{
     border: 1px solid lightgray;
     padding: 10px 50px;
     opacity: 0.7;
-    background: url(./Assets/search.svg) no-repeat scroll 183px 0px;
-    padding-left: 15px;
+    background: url(./Assets/search.svg) no-repeat scroll 186px 4px;
+    padding-left: 12px;
+    background-size: 26px;
 }
 
 
@@ -319,11 +342,10 @@ table{
 td{
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
+    padding-left: 12px;
     display: flex;
     cursor: pointer;
-    border-bottom: 1px solid rgb(236, 236, 236);
-    width: 476px;
+    width: 447px;
     position: relative;
     
 }
@@ -338,24 +360,38 @@ td{
     margin-right: 20px;
 }
 
-/* .item-container{
-    display: inline;
-} */
+.item-container{
+    width: 85px;
+}
+
+.panecontent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    display: flex;
+    cursor: pointer;
+    width: 476px;
+    position: relative;
+}
 
 .fromto-container{
-    width: 228px;
+    width: 245px;
 }
 
 .scrollit {
     overflow:scroll;
     overflow-x: hidden; /* Hide horizontal scrollbar */
-    height:100vh;
+    height:90vh;
 }
 /* width */
 .scrollit::-webkit-scrollbar {
-    width: 6px;
+    width: 4px;
   }
-  
+
+  ::-webkit-scrollbar-button {
+    height: 20px; 
+  }
+
   /* Track */
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 2px lightgrey; 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1700">
@@ -7,105 +8,130 @@
     <title>Mail</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
     <aside id="aside" class="aside">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMWrnqb5nj6JA2wjbQUwCUCvls_TQ9KhnREg&usqp=CAU" class="aside" alt="Snow" style="width:100%;opacity: 0.4;">                               
-                
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMWrnqb5nj6JA2wjbQUwCUCvls_TQ9KhnREg&usqp=CAU"
+            class="aside" alt="Snow" style="width:100%;opacity: 0.4;">
+
         <div class="aside-wrapper">
-            <div class="mail-header-container"> 
+            <div class="mail-header-container">
                 <p>Eric Hoffman</p>
                 <span style="font-size: 9px;margin-left: 33px;">Principal designer</span>
             </div>
-            <a href="#" class="composeMail" style="margin-top: 13px;margin-left: 73px;" rel="noopener noreferrer"><img src="./Assets/mail.png" style="width: 17px;"/>         Compose
-                
+            <a href="#" class="composeMail" style="margin-top: 13px;margin-left: 73px;" rel="noopener noreferrer"><img
+                    src="./Assets/mail.png" style="width: 17px;" /> Compose
+
             </a>
-    
+
             <div id="menu-items-container">
-               <ul class="menu-items"></ul>
+                <ul class="menu-items"></ul>
             </div>
-    
-    
-    
+
+
+
             <!-- <hr> -->
-    
+
             <!-- <div class="list-element">
                 <p class='headings'>LABELS</p>
                 <img src="./Assets/add_icon.svg" class="add_icon" alt="Add-Lables-Icon">
                 <ul class="lables-menu-items"></ul>
             </div> -->
-    
+
             <!-- <hr> -->
-    
+
             <!-- <div  class="list-element">
                 <p class='headings'>CHAT</p>
                 <img src="./Assets/add_icon.svg" class="add_icon" alt="Add-Lables-Icon">
                 <ul class="chats-menu-items"></ul>
             </div> -->
-           
+
 
         </div>
-       
+
 
 
     </aside>
-   
 
 
 
 
 
-   
-    <section id="mails-container">
 
-        <div class="mail-body">
-            <hr>
-            <div class="tab">
-                <button class="tablinks active" style="color: black;" id="defaultOpen">All</button>
-                <button class="tablinks" style="color: #c3c3c3;" >Most Recent</button>
-                <button class="tablinks" style="color: #c3c3c3;" >Unread</button>
-              </div>
-              <hr>
+    <div>
+        <section id="mails-container">
 
-    
-            <div class="scrollit">
-                <table class="mail-table"> </table>
+            <div class="mail-body">
+                <hr>
+                <div class="tab">
+                    <button class="tablinks active" style="color: black;" id="defaultOpen">All</button>
+                    <button class="tablinks" style="color: #c3c3c3;">Most Recent</button>
+                    <button class="tablinks" style="color: #c3c3c3;">Unread</button>
+                </div>
+                <hr>
+
+
+                <div class="scrollit">
+                    <table class="mail-table"> </table>
+                </div>
             </div>
-            
-    
+        </section>
 
-
-        </div>
-    </section>
-
+    </div>
 
     <section>
 
-        <div  class="sectio-two">
+        <div class="sectio-two">
             <hr>
             <div class='list-icon'>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAADO0lEQVRIie2WPWwcRRSAv/f2FlPgMkEQCwXFxeHL+GynpuGnAEv4SIs7Ogp+pMRpECQVCr8SVEh0QHmKHcUgIdJRmpPXcytSRFYkkhiFLi5ieZkZihtLe+f7i0GIIq/b997uN2/2/cEj+Y9ExnXM8/wZ7/0SsAicBKai6TZwK4RwTUTWjDG//yvgzc3NE5VK5YMQwptAMsLdi0izKIqV+fn5W0cGb21tNUTkW+AJYB+4IiJrzrkWnUgBppIkWQghNIAG8Biwq6rLtVrt6kODrbXvAJ8DCjRDCCuzs7Pbww5qrT0FfAycBTzwnjHmy7HBMdImEIALxpjPhgH7HOAccBlAVV/vF/khcJZlU6r6G53rPfew0BL8PJ3od9M0rVar1btlu/a+oKqXIrR5VCiAMeYTYBWYLIriUq+9K+JYMtuACyE81++fZll2XFV/AB4YY54fBs/zfNp7nwOJ9/5kvV4/SMjuiGOdJsCVIdDrwBng8WFQgFqtdlNE1oAkSZKlsq0LHEJ4FSA6D4KeBtre+8VR4BjMWvnbB1IpP4jINICqbpT1rVbrmKr+HKE3VPVlY8y9ccAhhA0RATg1EAw8GcF/lJVpmv4ImPhY9d7vWGsHsX4p//uJiYm7RVEAPF12OpTV/1REJIzj13vVOyGEyb29vaeA3QN9URSvpGl6nU7UN5IkeWFmZmZnHMD+/v6JeNV3yvrerN4GqFQqZ8r6hYWFP733LwFtoOqc+ynLsuPjgOlUAEBXlfRe9TpAbPhdUq/X73nvX4zw06q6Pia4ASAiXf5d4FhGDmjEhj8IviEiD0YR8zyfFpEl4C/n3MBJBYC19htrbbDWNkfGMkLa7faqtTa02+2ve22Hsto59yGdxDobp8xRoSshhCXgvqpeHAmem5u7o6rLdObp5ThljgL9iM5GstyvAoYtAm8DX8TDrarq+VqtdnMYMM/z6RDCpzFSD7xrjPmqn+/Q1SfP89e8998Bk0AhIqux9/6aJMltAOfcFJ2SacRESoH7wBvGmGuDvj1y2Wu1WsfSNH0feIvDLbZXPPB9kiQXRjWYsdfbLMum4mhbDCE8S/d6uy0i6865q+WZ+0j+F/I3JAdbvvR2GKsAAAAASUVORK5CYII=" class="iconimage" alt="forward-icon">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAADFklEQVRIidWVMWwcVRCGv1lY+2QfDWkAgcwZRHOh8b67FpBigUSRC1GOiioFsohjkmBACKgImFhRSAOyjDsqiwSbKlIoIBIUvn0UwNFEOQmCwA0lp7PR7U+Rt87Gd05CmZFOmp1/3vwz/+2bhXvd7HZgu90e6fV6DUkNYAp4NEB/AN7M1kul0lq1Wt3+3wTe+5ckLQKTd2jympnNJ0ny1TAw2h2QFLVarTOSLoTiPwFzURRV4zgux3FczrJsP/A68DPwhKSLaZouSBqoNzBBq9U6Y2bzwJakOefcspllw7qTFHnvXwXOAaPAx865t/ckCLJcALayLHu+Xq9/N1SUwaaeNbNLgeSQc24tx3ZGarfbI0FzJM3dbXGAWq32LXAyPC6maRrn2P250+v1GgTNnXPLgci89yeA48A+ICd9BvjbzD6Zmpo6b2bqdDpLk5OTM8B+SQeBL2+ZILyKACu55t77U8BZYAIoAy+GXxmYkHQuNECz2eyb2QqAmeW1bnmLEoAoir4pxGbDgcNxHJfN7BUzexkYl3Qk5BzPk/v9/uXgugGJgIcBut3u9UJsXzj4Q5Ik/wBf5ECapt8H98E8tr29/XupVAJ4ZNgEA2ZmV8JU87sxSW8G98rtahQJ/gIYGxt7rBB7D9gCTqRpOlvoftbM5gL2fh4fHR2dCO6feawoUQo8lWXZNPArQJIk3ns/K2kJOO+9fyB0/0E4c8w592OhxnTAWwMTmNl6cI8Wr3ySJMvAMSCTdFrSaSADXnPOfZ7nra6u3mdmR8NjXusmQalUWgOuAU+H679jzrlPJR0ANoFNSQecc58VcyqVygxQBa4Wmh1YFYckXeTGHnoh3NAd29jYeAigXq9vFuNpmj4HXAJiSY1arfb1UIKQvAC8xY0/8GSn01lqNpv93Xm5LJVKZcbMzgIjwEfOuXeKOQMEYUN+GEgAfjGzlX6/f3l8fPw3gG63+zgwHTSvAgIWkiR5d/fm3fODk6ZpA1gEntwrJ9hVSW8UZbkrgkASSzoYdkvCzU/mdUkeWDezdefcv3do4h62/wByzkt/j0g3UAAAAABJRU5ErkJggg==" class="iconimage" alt="close-icon">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACf0lEQVRIidWVv05UURDGfzMr4CY8gRpilBiS3bOF7gNogdqxWPAAUhiNCcZIsDARGrNIYW2QF9iEf1YkxgRbszR776UhFqLRN2CD4hkLzsVl766LdkxzJzP3fvN9c8/MgdNu8rdkkiT93vuKmVVE5CpwIaS+isiWma2r6lqhUPjxzwWiKLoDLACXepD8BEw751Y7JbU9YGYaRdFLYDmAN4ApVS147we994OqWgQeARFwGViJ47hqZhm8jIIAPg3sm9mUc25RRHwndmamcRzfA14BAyIyXywWn3YtENqyHMBvlUqlD52AO5C6DmwAA2Y2XiqV1tLckaQkSfo57DlmNnVScADn3KaIPAYQkYV6vd6XKeC9rxB67pxb7MF4tj22vb39GoiB4Xw+P5YpAIyH55tuPW+x53EcV1sDExMTv0RkqYXs8QLhnKOq73uAA2BmM+1KRORdcMtp7EzLB+eCu5vGoiiyEyg5m56cXC63670HOJ9R8L9mZs3Uz+Vy6ak8avGRAhH5ZmZXgCFgG8A513HSW5TNOefm0vje3t6QqgJ876SgDuC9Hz0h+VnnXPs/uBncj5kCZrYe3MlOI99mx5gD1Gq1HHAXQFXfZgqo6hqHi8uF8e9q7cwBRkZG7otIAdhpNpsp2cyqGAdWgH3gtnNus4cSAOI4vmFmG0CfqlYKhUJWQWC2KiLzwACwEcfxgyC9o9VqtVyj0XgYwPuBait4RgEcbsgkSV6Y2UxKUESWwhB9Bjg4OLgoIqPAZGiLAdVisfisfQt0vXAajUZFRBaA4W7vBNtR1SftzHsWAKjX6335fH4s7JZr/LkyvwBbqrrebDbXy+Xyzx4kTrH9BpylBfO7jp2fAAAAAElFTkSuQmCC" class="iconimage" alt="next-icon">                
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAADZUlEQVRYhe2Wv28cRRTHP298Z8mWkwpZIrYlSFKkMDrrbs92TUQTojhW0rlB6WLxQwKSVEGmIxEIkMBCFFRQBew4yA1S+APuZuFWWILGRAgnQe6CLVm63dtHcXPRaW4v5zvo8LfZ0b43731m583OgyP93yX9OFcqlSkRWQBeFZEXgCln+lNEHgCbcRxvzM/P7/ynALVabSKO4/dE5AqQ6+GeAt8ZY64Vi8U//jVAtVq9ICJfA8eAuqquA3eBn4eHh3cA6vX6JFAEFkRkERgG9kRkqVQqfT8wgLX2DeATwAB3Go3Gjbm5uQc9gE8aY26r6iUgVdW3yuXyZ30DuJWvA6qq18rl8sfPSpwB/w5wCxARudjtS2QC1Gq1iSRJfgWOqerb/Sb3ID4E/gbOBEHw2PcxWROTJHmf5p7fGTQ5QBAEH6nqGnBcVVeyfDoAKpXKFPAaUG80Gjd8u7X2ahRF4/77KIrGrbVX/fcich2oi8iVWq020RPAnfMhVV33C85auwysxnF8vx0iiqLxOI7vA6vO56mCINgGNoBckiQLPQGMMefccMO35fP5b4EtYLoF0ZZ8GthyPv6iWrHO+bYOAFU9BZCmaejbCoXCbj6fP9sO4SU/WygUdv15aZpaNzzVEwA4ATA2NvYow0ahUNg1xrwM/OISTwO/pWn6SlZygNHR0YduOHkYAM0K0kvGmK7/lL29vVae9DAAjwH29/dPZAWLomg8TdMfgZdobsUWcAb4Iet0AAwNDT3vhh1fNesUbAMYY0pZyf0992siC8IYE7jhdk8AYNM9O45MHMeX8QouozAv+/NUtRVr07d1AMRxvAEkIrJYrVZPttuCIFgFlv1qb4NYdj5PFYbhabeYJJfL3ctYcKestV9aazUMw44z3a+stWsu1hdZ9sy7wBizAuyp6iV3oQya/F1gEXjSaDQOdxcAFIvFRyKyRPPY3BoEwiX/wMVYmp2d/SvL75kNSbVafV1EPgWMqq6JyHX3b++qMAxPq+ptmitPReTNUqn0eTf/ni1ZGIbnVfUb4DhQp3lH3AV+GhkZ2QE4ODiYFJGSql6kWXB54AmwFARBR+X3BQBgrX0OuAks07spTVT1KxFZyWpABgJoyXVKF4DzwIu0teXA78BmLpe7NzMz87BbjCMdydc/7F+E19OkiqIAAAAASUVORK5CYII=" class="iconimage" alt="warning-icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAADO0lEQVRIie2WPWwcRRSAv/f2FlPgMkEQCwXFxeHL+GynpuGnAEv4SIs7Ogp+pMRpECQVCr8SVEh0QHmKHcUgIdJRmpPXcytSRFYkkhiFLi5ieZkZihtLe+f7i0GIIq/b997uN2/2/cEj+Y9ExnXM8/wZ7/0SsAicBKai6TZwK4RwTUTWjDG//yvgzc3NE5VK5YMQwptAMsLdi0izKIqV+fn5W0cGb21tNUTkW+AJYB+4IiJrzrkWnUgBppIkWQghNIAG8Biwq6rLtVrt6kODrbXvAJ8DCjRDCCuzs7Pbww5qrT0FfAycBTzwnjHmy7HBMdImEIALxpjPhgH7HOAccBlAVV/vF/khcJZlU6r6G53rPfew0BL8PJ3od9M0rVar1btlu/a+oKqXIrR5VCiAMeYTYBWYLIriUq+9K+JYMtuACyE81++fZll2XFV/AB4YY54fBs/zfNp7nwOJ9/5kvV4/SMjuiGOdJsCVIdDrwBng8WFQgFqtdlNE1oAkSZKlsq0LHEJ4FSA6D4KeBtre+8VR4BjMWvnbB1IpP4jINICqbpT1rVbrmKr+HKE3VPVlY8y9ccAhhA0RATg1EAw8GcF/lJVpmv4ImPhY9d7vWGsHsX4p//uJiYm7RVEAPF12OpTV/1REJIzj13vVOyGEyb29vaeA3QN9URSvpGl6nU7UN5IkeWFmZmZnHMD+/v6JeNV3yvrerN4GqFQqZ8r6hYWFP733LwFtoOqc+ynLsuPjgOlUAEBXlfRe9TpAbPhdUq/X73nvX4zw06q6Pia4ASAiXf5d4FhGDmjEhj8IviEiD0YR8zyfFpEl4C/n3MBJBYC19htrbbDWNkfGMkLa7faqtTa02+2ve22Hsto59yGdxDobp8xRoSshhCXgvqpeHAmem5u7o6rLdObp5ThljgL9iM5GstyvAoYtAm8DX8TDrarq+VqtdnMYMM/z6RDCpzFSD7xrjPmqn+/Q1SfP89e8998Bk0AhIqux9/6aJMltAOfcFJ2SacRESoH7wBvGmGuDvj1y2Wu1WsfSNH0feIvDLbZXPPB9kiQXRjWYsdfbLMum4mhbDCE8S/d6uy0i6865q+WZ+0j+F/I3JAdbvvR2GKsAAAAASUVORK5CYII="
+                    class="iconimage" alt="forward-icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAADFklEQVRIidWVMWwcVRCGv1lY+2QfDWkAgcwZRHOh8b67FpBigUSRC1GOiioFsohjkmBACKgImFhRSAOyjDsqiwSbKlIoIBIUvn0UwNFEOQmCwA0lp7PR7U+Rt87Gd05CmZFOmp1/3vwz/+2bhXvd7HZgu90e6fV6DUkNYAp4NEB/AN7M1kul0lq1Wt3+3wTe+5ckLQKTd2jympnNJ0ny1TAw2h2QFLVarTOSLoTiPwFzURRV4zgux3FczrJsP/A68DPwhKSLaZouSBqoNzBBq9U6Y2bzwJakOefcspllw7qTFHnvXwXOAaPAx865t/ckCLJcALayLHu+Xq9/N1SUwaaeNbNLgeSQc24tx3ZGarfbI0FzJM3dbXGAWq32LXAyPC6maRrn2P250+v1GgTNnXPLgci89yeA48A+ICd9BvjbzD6Zmpo6b2bqdDpLk5OTM8B+SQeBL2+ZILyKACu55t77U8BZYAIoAy+GXxmYkHQuNECz2eyb2QqAmeW1bnmLEoAoir4pxGbDgcNxHJfN7BUzexkYl3Qk5BzPk/v9/uXgugGJgIcBut3u9UJsXzj4Q5Ik/wBf5ECapt8H98E8tr29/XupVAJ4ZNgEA2ZmV8JU87sxSW8G98rtahQJ/gIYGxt7rBB7D9gCTqRpOlvoftbM5gL2fh4fHR2dCO6feawoUQo8lWXZNPArQJIk3ns/K2kJOO+9fyB0/0E4c8w592OhxnTAWwMTmNl6cI8Wr3ySJMvAMSCTdFrSaSADXnPOfZ7nra6u3mdmR8NjXusmQalUWgOuAU+H679jzrlPJR0ANoFNSQecc58VcyqVygxQBa4Wmh1YFYckXeTGHnoh3NAd29jYeAigXq9vFuNpmj4HXAJiSY1arfb1UIKQvAC8xY0/8GSn01lqNpv93Xm5LJVKZcbMzgIjwEfOuXeKOQMEYUN+GEgAfjGzlX6/f3l8fPw3gG63+zgwHTSvAgIWkiR5d/fm3fODk6ZpA1gEntwrJ9hVSW8UZbkrgkASSzoYdkvCzU/mdUkeWDezdefcv3do4h62/wByzkt/j0g3UAAAAABJRU5ErkJggg=="
+                    class="iconimage" alt="close-icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACf0lEQVRIidWVv05UURDGfzMr4CY8gRpilBiS3bOF7gNogdqxWPAAUhiNCcZIsDARGrNIYW2QF9iEf1YkxgRbszR776UhFqLRN2CD4hkLzsVl766LdkxzJzP3fvN9c8/MgdNu8rdkkiT93vuKmVVE5CpwIaS+isiWma2r6lqhUPjxzwWiKLoDLACXepD8BEw751Y7JbU9YGYaRdFLYDmAN4ApVS147we994OqWgQeARFwGViJ47hqZhm8jIIAPg3sm9mUc25RRHwndmamcRzfA14BAyIyXywWn3YtENqyHMBvlUqlD52AO5C6DmwAA2Y2XiqV1tLckaQkSfo57DlmNnVScADn3KaIPAYQkYV6vd6XKeC9rxB67pxb7MF4tj22vb39GoiB4Xw+P5YpAIyH55tuPW+x53EcV1sDExMTv0RkqYXs8QLhnKOq73uAA2BmM+1KRORdcMtp7EzLB+eCu5vGoiiyEyg5m56cXC63670HOJ9R8L9mZs3Uz+Vy6ak8avGRAhH5ZmZXgCFgG8A513HSW5TNOefm0vje3t6QqgJ876SgDuC9Hz0h+VnnXPs/uBncj5kCZrYe3MlOI99mx5gD1Gq1HHAXQFXfZgqo6hqHi8uF8e9q7cwBRkZG7otIAdhpNpsp2cyqGAdWgH3gtnNus4cSAOI4vmFmG0CfqlYKhUJWQWC2KiLzwACwEcfxgyC9o9VqtVyj0XgYwPuBait4RgEcbsgkSV6Y2UxKUESWwhB9Bjg4OLgoIqPAZGiLAdVisfisfQt0vXAajUZFRBaA4W7vBNtR1SftzHsWAKjX6335fH4s7JZr/LkyvwBbqrrebDbXy+Xyzx4kTrH9BpylBfO7jp2fAAAAAElFTkSuQmCC"
+                    class="iconimage" alt="next-icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAADZUlEQVRYhe2Wv28cRRTHP298Z8mWkwpZIrYlSFKkMDrrbs92TUQTojhW0rlB6WLxQwKSVEGmIxEIkMBCFFRQBew4yA1S+APuZuFWWILGRAgnQe6CLVm63dtHcXPRaW4v5zvo8LfZ0b43731m583OgyP93yX9OFcqlSkRWQBeFZEXgCln+lNEHgCbcRxvzM/P7/ynALVabSKO4/dE5AqQ6+GeAt8ZY64Vi8U//jVAtVq9ICJfA8eAuqquA3eBn4eHh3cA6vX6JFAEFkRkERgG9kRkqVQqfT8wgLX2DeATwAB3Go3Gjbm5uQc9gE8aY26r6iUgVdW3yuXyZ30DuJWvA6qq18rl8sfPSpwB/w5wCxARudjtS2QC1Gq1iSRJfgWOqerb/Sb3ID4E/gbOBEHw2PcxWROTJHmf5p7fGTQ5QBAEH6nqGnBcVVeyfDoAKpXKFPAaUG80Gjd8u7X2ahRF4/77KIrGrbVX/fcich2oi8iVWq020RPAnfMhVV33C85auwysxnF8vx0iiqLxOI7vA6vO56mCINgGNoBckiQLPQGMMefccMO35fP5b4EtYLoF0ZZ8GthyPv6iWrHO+bYOAFU9BZCmaejbCoXCbj6fP9sO4SU/WygUdv15aZpaNzzVEwA4ATA2NvYow0ahUNg1xrwM/OISTwO/pWn6SlZygNHR0YduOHkYAM0K0kvGmK7/lL29vVae9DAAjwH29/dPZAWLomg8TdMfgZdobsUWcAb4Iet0AAwNDT3vhh1fNesUbAMYY0pZyf0992siC8IYE7jhdk8AYNM9O45MHMeX8QouozAv+/NUtRVr07d1AMRxvAEkIrJYrVZPttuCIFgFlv1qb4NYdj5PFYbhabeYJJfL3ctYcKestV9aazUMw44z3a+stWsu1hdZ9sy7wBizAuyp6iV3oQya/F1gEXjSaDQOdxcAFIvFRyKyRPPY3BoEwiX/wMVYmp2d/SvL75kNSbVafV1EPgWMqq6JyHX3b++qMAxPq+ptmitPReTNUqn0eTf/ni1ZGIbnVfUb4DhQp3lH3AV+GhkZ2QE4ODiYFJGSql6kWXB54AmwFARBR+X3BQBgrX0OuAks07spTVT1KxFZyWpABgJoyXVKF4DzwIu0teXA78BmLpe7NzMz87BbjCMdydc/7F+E19OkiqIAAAAASUVORK5CYII="
+                    class="iconimage" alt="warning-icon">
                 <div class='searchbar'>
-                        <input type="text" placeholder="Your Keyword..." name="search">                        
+                    <input type="text" placeholder="Your Keyword..." name="search">
                 </div>
             </div>
             <hr>
-            
-    
+            <!-- <img src="https://www.freeiconspng.com/uploads/circle-png-7.png" style="display: flex;" width="50"
+                alt="circle effects png" /> -->
+            <tr>
+                <td>
+                    <span style="padding-top: 19px;
+                    display: grid;
+                    padding-bottom: 10px;
+                    padding-left: 12px;">
+
+                        <p style="padding-left:60px">Kenil Bhavsar </p>
+                        <p style="font-size: 9px;
+                        padding-left: 61px;">love with UI/GUI/UX</p>
+                        <img style="margin-top: -40px;
+                        margin-left: -11px;" src="https://www.freeiconspng.com/uploads/circle-png-7.png" width="50"
+                            alt="circle effects png" />
+                        <div class="vl"></div>
+                    </span>
+
+                </td>
+            </tr>
+
+            <hr>
+
+
 
 
         </div>
     </section>
 
 
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-  
- <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
