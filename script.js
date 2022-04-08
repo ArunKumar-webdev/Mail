@@ -150,6 +150,9 @@ window.onload = async () => {
             //       debugger
             //     $(this).addClass("dotactive").siblings().removeClass("dotactive");                
             //   });  
-              
+
+            $(document).ready(function(){
+                $("#reply").val("it's really an amazing. I want to know more about it..!!");
+            });
                         
     };
