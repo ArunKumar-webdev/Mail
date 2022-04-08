@@ -169,7 +169,7 @@ window.onload = async () => {
                 document.getElementById("heading").innerHTML = mailList[i].content;
                 document.getElementById("contentPane").innerHTML = mailList[i].innercontent;
                 document.getElementById("thanksarea").innerHTML = res[0];
-                document.getElementById("headingsubject").innerHTML = res[0];
+                document.getElementById("headingname").innerHTML = res[0];
                 document.getElementById("headingsubject").innerHTML = mailList[i].content;
                 return;                
             } else if (res[0] == "Roman Gonzalez"){
@@ -191,6 +191,7 @@ window.onload = async () => {
 
                 <input value="it's really an amazing. I want to know more about it..!!" id="reply" style="margin-top: 40px;width: 686px;height: 70px;font-size: 10px;padding-bottom: 35px;border: 1px solid lightgray; opacity: 0.7; padding-left: 10px; padding-bottom: 35px; background-size: 26px;"  type="text"></p>
                 <button class="button button3">Send</button>`;
+                document.getElementById("headingname").innerHTML = "Kenil Bhavsar";
                 document.getElementById("headingsubject").innerHTML = 'My Amazing trip of australia!';
                 $(mailpaneContent).html(mailpaneContenttemp);
                 return;
