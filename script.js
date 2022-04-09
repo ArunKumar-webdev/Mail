@@ -28,14 +28,14 @@ var lableimage = "";
 const promiseOfData = fetch("data.json")
     .then(response => response.json())
     .then(json => {
-        console.log(json);
+        // console.log(json);
         return json;
     });
 
 
 window.onload = async () => {
     data = await promiseOfData;
-    console.log(data);
+    // console.log(data);
     sidebarItem = data.sidebarItem.map(current => current);
     chatsList = data.chatsList.map(current => current);
     lablesList = data.lablesList.map(current => current);
@@ -43,18 +43,18 @@ window.onload = async () => {
 
     sidebarItem.forEach(element => {
         if (element == "INBOX") {
-            menuOut += `<li class='sideli activee' style="width: 170%;">${element}<span style="color: white" class="dot dotactive"><div class="circle">5</div></span></li><br>`;
+            menuOut += `<li class='sideli activee' style="width: 170%;font-weight: bold;">${element}<span style="color: white" class="dot dotactive"><div class="circle">5</div></span></li><br>`;
             $(menuItems).html(menuOut);
-        } else if (element == "DRAFTS") {
-            menuOut += `<li class='sideli' style="width: 170%;">${element}<span class='dottli' style="border: 2px solid darkslategrey;height: 25px;
+        } else if (element == "DRAFT") {
+            menuOut += `<li class='sideli' style="width: 170%;font-weight: bold;">${element}<span class='dottli' style="border: 2px solid darkslategrey;height: 25px;
                     width: 25px;
                     border-radius: 50%;
-                    margin-left: 186px;
+                    margin-left: 197px;
                     display: inline-block;
                     text-align: center;"><div class="circle">2</div></span></li><br>`;
             $(menuItems).html(menuOut);
         } else if (element == "MESSAGE") {
-            menuOut += `<li class='sideli' style="width: 200%;">${element}<span class='dottli' style="border: 2px solid darkslategrey;height: 25px;
+            menuOut += `<li class='sideli' style="width: 200%;font-weight: bold;">${element}<span class='dottli' style="border: 2px solid darkslategrey;height: 25px;
                     width: 25px;
                     border-radius: 50%;
                     margin-left: 174px;
@@ -63,7 +63,7 @@ window.onload = async () => {
             $(menuItems).html(menuOut);
         }
         else if (element == "SPAN") {
-            menuOut += `<li class='sideli' style="width: 170%;">${element}<span class='dottli' style="border: 2px solid darkslategrey;    height: 25px;
+            menuOut += `<li class='sideli' style="width: 170%;font-weight: bold;">${element}<span class='dottli' style="border: 2px solid darkslategrey;    height: 25px;
                     width: 25px;
                     border-radius: 50%;
                     margin-left: 207px;
@@ -72,7 +72,7 @@ window.onload = async () => {
             $(menuItems).html(menuOut);
         }
         else {
-            menuOut += `<li class='sideli' style="width: 200%;">${element}</li><br>`;
+            menuOut += `<li class='sideli' style="width: 200%;font-weight: bold;">${element}</li><br>`;
             $(menuItems).html(menuOut);
         }
     });
@@ -209,6 +209,12 @@ window.onload = async () => {
 
     $(document).ready(function () {
         $("#reply").val("it's really an amazing. I want to know more about it..!!");
+    });
+
+    $("#turnoff").click(function () {
+        alert('Signing Out : Have a nice day 🤗')
+        setTimeout(document.getElementById("container").innerHTML = "",1000)
+        
     });
 
 };

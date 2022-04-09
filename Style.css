@@ -23,9 +23,9 @@ body
 /* ---------------------------Aside menu--------------------- */
 
 #aside{
-    background-color: #1C2124;
+    background-color: #1d2731;
     width: 20%;
-    height: 100vh;
+    height: 100%;
    display: inline-block;
    position: fixed;
    top: 0;
@@ -58,7 +58,7 @@ body
     width: 32%;
     position: absolute;
     left: 20%;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
 }  
 
@@ -261,6 +261,19 @@ hr{
     margin-top: -45px;  
   }
 
+  .vlbottompane {
+    border: none;
+    border-left: 1px solid #1c242e;
+    height: 23px;
+    bottom: 2%;
+    color: black;
+    background-color: black;
+    opacity: 0.4;
+    width: 2px;
+    right: 50%;
+    position: absolute;
+  }
+
 .mail-body{
     width: 92%;
     margin-left: 5px;
@@ -323,20 +336,22 @@ input{
   .button3 {background-color: #f44336;
     width: 84px;
     margin-left: 600px;
-} /* Red */ 
-
-
-/* .list-icon{
-    padding-left: 60px;
-} */
-
-/* List of icons */
+} 
 
 .iconimage{
     margin: 20px -5px 18px 0px;
     width: 28px;
 }
 
+#watermark
+{
+ position:fixed;
+ bottom:5px;
+ right:5px;
+ opacity:0.5;
+ z-index:99;
+ color:black;
+}
 
 
 /* ------------------Mail table------------------------- */
