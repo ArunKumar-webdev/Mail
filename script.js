@@ -87,8 +87,7 @@ window.onload = async () => {
             unreadmsg = "";
         }
 
-
-        if (element.fromMail == "Roman Gonzalez") {
+        if (element.fromMail == "Roman") {
             mailitemOut += `<tr class='mail-item active'>
                                 <td class='tableData'>                                
                                 <div class='item-container fromto-container ${unreadmsg}'>
@@ -137,22 +136,22 @@ window.onload = async () => {
 
     // default load 
     $(document).ready(function () {
-        mailpaneContenttemp += `<p id="name" style="font-size: 12px;">Hi Eric,</p>
+        mailpaneContenttemp += `<p id="name" style="font-size: 13px;">Hi Eric,</p>
                 <p id="heading" style="padding-top: 20px;">There are things I love and hate about Aussie food.</p>
-                <p id="contentPane" style="margin-top: 22px;font-size: 12px;">Being American, I loathe Australian hamburgers and lack of quality Mexican food. I love the amount of Asian restaurants available in the cities, and you can take me out for a pub dinner (schnitzel) any day of the week. My fascination with Australia started young and was probably enhanced as a tween when I fell in love with Silverchair. I always thought it sounded like an exotic place to travel, and you never meet an Aussie traveling that doesn't love their home country</p>
+                <p id="contentPane" style="margin-top: 22px;font-size: 13px;">Being American, I loathe Australian hamburgers and lack of quality Mexican food. I love the amount of Asian restaurants available in the cities, and you can take me out for a pub dinner (schnitzel) any day of the week. My fascination with Australia started young and was probably enhanced as a tween when I fell in love with Silverchair. I always thought it sounded like an exotic place to travel, and you never meet an Aussie traveling that doesn't love their home country</p>
                 <p style="padding-top: 30px;font-size: 12px;">Thank you..</p>
-                <p id="thanksarea" style="font-size: 10px;">Kenil Bhavsar</p>
+                <p id="thanksarea" style="font-size: 12px;">Kenil Bhavsar</p>
                 <br>
                 <br>
                 <hr style="width: 685px;opacity: 0.1;">
                 <div style="padding-top: 6px;padding-bottom: 7px;"><p style="font-size: 11px;">Attachment :</p>
-                <img style="    margin-top: -23px;margin-left: 655px;width: 25px;" src="./Assets/download-file.png"
+                <img style="margin-top: -23px;margin-left: 655px;width: 25px;" src="./Assets/download-file.png"
                     alt="circle effects png" />
-                <p style="font-size: 8px;margin-top: -12px;">My Photo.jpg</p>                        
+                <p style="font-size: 10px;margin-top: -12px;">My Photo.jpg</p>                        
                 </div>
                 <hr style="width: 685px;opacity: 0.1;">
 
-                <input id="reply" style="margin-top: 40px;width: 686px;height: 70px;font-size: 10px;padding-bottom: 35px;border: 1px solid lightgray; opacity: 0.7; padding-left: 10px; padding-bottom: 35px; background-size: 26px;"  type="text"></p>
+                <input id="reply" style="margin-top: 40px;width: 686px;height: 70px;font-size: 12px;padding-bottom: 35px;border: 1px solid lightgray; opacity: 0.7; padding-left: 10px; padding-bottom: 35px; background-size: 26px;"  type="text"></p>
                 <button class="button button3">Send</button>`;
 
                 $(mailpaneContent).html(mailpaneContenttemp);
